@@ -1,0 +1,31 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblInitial" Content="Initial Amount" HorizontalAlignment="Left" Margin="35,61,0,0" VerticalAlignment="Top" Width="99"/>
+        <Label x:Name="lblElapsed" Content="Elapsed Time" HorizontalAlignment="Left" Margin="35,170,0,0" VerticalAlignment="Top" Height="26" Width="99"/>
+        <Label HorizontalAlignment="Left" Margin="35,111,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCurrent" Content="Current Amount" Margin="35,117,314,180.8"/>
+        <TextBox x:Name="txtInitial" HorizontalAlignment="Left" Height="23" Margin="155,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCurrent" HorizontalAlignment="Left" Height="23" Margin="155,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtElapsed" HorizontalAlignment="Left" Height="23" Margin="155,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnIncrease" Content="Increase Time" HorizontalAlignment="Left" Margin="372,69,0,0" VerticalAlignment="Top" Width="109" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnDecrease" Content="Decrease Time" HorizontalAlignment="Left" Margin="372,115,0,0" VerticalAlignment="Top" Width="109" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnReset" Content="Reset Defaults" HorizontalAlignment="Left" Margin="372,239,0,0" VerticalAlignment="Top" Width="109" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnCalculate" HorizontalAlignment="Left" Margin="45,239,0,0" VerticalAlignment="Top" Width="230">
+            <TextBox Height="23" TextWrapping="Wrap" Text="TextBox" Width="120" TextChanged="TextBox_TextChanged"/>
+        </Button>
+        <Label x:Name="lblName" Content="Will" HorizontalAlignment="Left" Margin="2.791,286,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="txtHalfLife" HorizontalAlignment="Left" Height="23" Margin="45,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" IsReadOnly="True"/>
+
+    </Grid>
+</Window>
