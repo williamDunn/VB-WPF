@@ -1,5 +1,3 @@
-﻿'William Dunn - 275 - Assignment 10
-
 Class MainWindow
     Private Sub AddToTotal(initial As Double)
         Dim total As Double = Double.Parse(txtInitial.Text)
